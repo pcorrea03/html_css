@@ -1,0 +1,252 @@
+/* Common Styles for all pages of Pokémon Center Web site */
+/* Note: Refer to grading sheet for details on each of these sections */
+
+/* CSS Final Project by Pedro Correa
+
+
+
+/* First rule below should probably be left alone. */
+
+header, nav, section, footer, article {     /* leave this alone */
+	display: block;
+}
+
+
+/* 1. Page Styles: On the "body" you must at least set color, background, margin, padding, font family & size.    
+   ==============  Optionally, you can also set styles on the page wrapper div here if you like.  
+	               But note that you will lose points for any of the above properties that are not set for the body  */
+
+body {
+    background-color: lightgray; 
+    margin: 0 100px 0 100px;
+    padding: 50px 10px 10px 10px;
+    font-family: 'Arvo', Georgia, Times, serif;
+    font-size: 20px;    
+}
+	                
+
+/* 2. Header (Banner) Styles: For the top header area (which includes the h1) and should be treated as a banner area. 
+   =========================  Possible properties to use here include "background", "height", "padding", "margin",     
+                              and "border".  Feel free to use others instead. Use at least 2 properties.           */
+
+header .headingtext {
+    height: 50px;
+    color: yellow;
+    border-style: none none solid none;
+    border-width: 5px;
+    border-color: blue;
+    margin-left: 100px;
+}                    
+
+
+
+/* 3. Heading Styles: For h1-h3 together, set font-family and color; for each separately set font-size using em or %.   
+   =================  Set other styles as needed. Goal is to make heading text stand out from other page text.   
+	                  Use text-shadowing on your headings. One of your heading fonts must be an embedded Web font.  */
+	                   
+h1, h2, h3 {
+    font-family: 'Arvo', Georgia, Times, serif;
+    color: blue;
+}
+
+h1 {
+    font-size: 350%;
+    text-shadow: 3px 3px blue;
+    font-style: italic;
+}
+
+h2 {
+    font-size: 175%;
+}
+
+h3 {
+    font-size: 125%;
+    font-weight: lighter;
+}
+
+
+
+/* 4. Intro Paragraph Styles:  use at least 1 property to emphasize 1st paragraph (intro article) 
+   =========================   */
+
+#intro {
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+
+/* 5. Copyright Styles:  use at least 2 properties to de-emphasize the copyright paragraph (footer)  
+   ===================  */
+
+footer {
+    font-size: 12px;
+    font-weight: bold;
+    text-align: right;
+    letter-spacing: -1px;
+}
+
+
+/* 6. General Link Styles: Style the links outside the nav bar area using at least color and text-decoration  
+   ======================  Write 4 separate rules to affect all 4 link states.  */
+
+a:link {
+    color: blue;
+    text-decoration: none;
+}
+
+a:visited {
+    color: dimgray;
+}
+
+a:hover {
+    color: khaki;
+    text-decoration: overline underline;
+}
+
+a:active {
+    color: white;
+}
+
+/* 7. Navigation Bar Styles: Should affect only the nav bar links. Style nav, ul and its li's as needed.           
+   ========================  Style all 4 link states to make active buttons when hovering. Remove bullets from list display. 
+                             Use selectors like "#eventspage #eventslink" to style the link to its own page separately      */ 
+                             
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 5px;
+}
+nav ul a:link {
+    font-weight: bold;
+    color: blue;
+}
+
+nav ul a:visited {
+    color: red;
+}
+
+nav ul a:hover {
+    color: black;
+}
+
+nav ul a:active {
+    color: white;
+    text-decoration: line-through;
+}
+
+#contactpage #contactlink, #eventspage #eventslink, #faqpage #faqlink, #homepage #homelink, #servicespage #serviceslink, #reservationspage #reservationslink {
+    cursor: default;
+    text-decoration: underline;
+    color: purple;
+}
+
+/* 8. General List Styles: For unordered lists outside of nav bar. Set 2 levels of bullet shapes & 2 levels of bullet images. 
+   ======================  Outer bullets should stand out more than inner bullets. Use Reservations & Contact pages to test. */
+
+#primary ul {
+    list-style-image: url('pokeball.png');
+}
+
+#primary ul ul {
+    list-style-image: url('smallball.png');
+}
+
+
+/* 9. Testimonial Styles: At least 4 rules to style at least these 4 items: the surrounding testimonials article,    
+   =====================  the 3 testimonial divs, the quotes, and the speakers. Goals: Uniquely style testimonial section 
+	                       itself, emphasize quote, de-emphasize speaker name. Adjust vertical spacing between items.       */
+
+#testimonials {
+    font-size: 16px;
+    letter-spacing: 2px;
+}
+
+#testimonials .headingtext {
+    font-size: 125%;
+    font-weight: lighter;
+}
+
+div .testimonial {
+    border-style: groove;
+    padding: 10px;
+    font-family: Times, serif;
+    text-transform: uppercase; 
+}
+
+.quote {
+    word-spacing: 2px;
+    font-style: italic;
+}
+
+.speaker {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+
+/* 10. Logo Positioning Styles: Absolute Positioning of logo image using "positionme" id. Leave the existing blank div at 
+   ===========================  bottom of each page in the html & style it to go toward the top of pages where you like.  
+	                            Give it a height & width to match logo image, set image as background, position absolutely */
+
+#positionme {
+    position: absolute;
+    z-index: 0;
+    width: 866px;
+    height: 125px;
+    top: 0px;
+    left: 0px;
+    background-image: url('logo.png');
+}
+
+
+/* 11. Multi-Column Layout Styles: Use of float, position, margin, and/or padding styles to create a multi-column layout.  
+   ==============================  For help with these styles, see the online "Final Project Layout Guide" handout.     
+	                               For some partial credit here you can use just the layout styles from A3P5              */
+	                               
+body {
+    background: gold;
+    margin: 0;
+    }
+#pagewrap {
+    background: silver;
+    color: black;
+    width: 80%;
+    position: relative;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+#main {
+    clear: left;
+    margin-top: 1em;
+    padding-right: 30%;
+}
+
+#testimonials {
+    position: absolute;
+    top: 210px;
+    right: 20px;
+    width: 25%;
+}
+nav ul {
+    list-style-type: none;
+    list-style-image: none;
+    }
+    
+nav li {
+    float: left;
+    margin-right: 3em;
+}
+
+nav {
+    margin-bottom: 1em;
+    padding-bottom: 1em;
+}
+
+
+/* Miscellaneous Styles: Styles that don't fit in any of the above categories but affect multiple pages can go here. 
+   ====================  Use only as needed. This section is optional and does not count for any points.                 */
+
+#hotelfig {
+    margin-left: 0;
+}
