@@ -1,0 +1,37 @@
+@charset "UTF-8";
+/*	
+	Stylesheet
+	Final Project by Pedro Correa
+*/
+
+body
+{
+	background-color: grey;
+}
+nav
+{
+	background-color: grey;
+}
+a
+{
+	color: black;
+	font-family:serif;
+}
+a:hover
+{
+	background-color: white;
+}
+a:visited
+{
+	color: purple;
+}
+h1, h2
+{
+	color: black;
+	font-family: serif;
+}
+p , ul, ol, dl
+{
+	color: white;
+	font-family: sans-serif;
+}
